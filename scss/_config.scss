@@ -1,0 +1,25 @@
+$primary_purple_600: hsl(246, 80%, 60%);
+$primary_orange: hsl(15, 100%, 70%);
+$primary_blue: hsl(195, 74%, 62%);
+$primary_pink: hsl(348, 100%, 68%);
+$primary_green: hsl(145, 58%, 55%);
+$primary_purple_700: hsl(264, 64%, 52%);
+$primary_yellow: hsl(43, 84%, 65%);
+
+$neutral_navy_950: hsl(226, 43%, 10%);
+$neutral_navy_900: hsl(235, 46%, 20%);
+$neutral_navy_200: hsl(236, 100%, 87%);
+$neutral_purple: hsl(235, 45%, 61%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: $neutral_navy_950;
+}

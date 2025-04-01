@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <script src="./js/main.js" defer></script>
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
@@ -18,45 +20,47 @@
 <body>
   <main>
     <div>
-      <img src="./images/image-jeremy.png" alt="Jeremy Robson's Profile Picture"/>
-      <p>
-        <span>Report for</span>
-        <span>Jeremy Robson</span>
-      </p>
+      <div class="profile-info">
+        <img src="./images/image-jeremy.png" alt="Jeremy Robson's Profile Picture"/>
+        <p>
+          <span class="report-text">Report for</span>
+          <span class="profile-name">Jeremy Robson</span>
+        </p>
+      </div>
+      <nav>
+        <a href="#">Daily</a>
+        <a href="#" class="weekly-link">Weekly</a>
+        <a href="#">Monthly</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#">Daily</a>
-      <a href="#">Weekly</a>
-      <a href="#">Monthly</a>
-    </nav>
-    <ul>
+    <ul id="timeframeList">
       <li>
-        <span data-title="Work" class="category-title"></span>
+        <span class="category-title">Work</span>
         <span data-current="32" class="category-current-value"></span>
         <span data-previous="36" class="category-previous-value"></span>
       </li>
       <li>
-        <span data-title="Play" class="category-title"></span>
+        <span class="category-title">Play</span>
         <span data-current="10" class="category-current-value"></span>
         <span data-previous="8" class="category-previous-value"></span>
       </li>
       <li>
-        <span data-title="Study" class="category-title"></span>
+        <span class="category-title">Study</span>
         <span data-current="4" class="category-current-value"></span>
         <span data-previous="7" class="category-previous-value"></span>
       </li>
       <li>
-        <span data-title="Exercise" class="category-title"></span>
+        <span class="category-title">Exercise</span>
         <span data-current="4" class="category-current-value"></span>
         <span data-previous="5" class="category-previous-value"></span>
       </li>
       <li>
-        <span data-title="Social" class="category-title"></span>
+        <span class="category-title">Social</span>
         <span data-current="5" class="category-current-value"></span>
         <span data-previous="10" class="category-previous-value"></span>
       </li>
       <li>
-        <span data-title="Self Care" class="category-title"></span>
+        <span class="category-title">Self Care</span>
         <span data-current="2" class="category-current-value"></span>
         <span data-previous="2" class="category-previous-value"></span>
       </li>

@@ -1,1 +1,49 @@
 @import './config';
+
+.profile-info {
+    background-color: $primary_purple_600;
+    padding-top: 35px;
+    padding-left: 25px;
+}
+
+.profile-info img {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 80px;
+    margin-bottom: 35px;
+}
+
+nav {
+    background-color: $neutral_navy_900;
+    padding: 25px 0 35px 25px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: $neutral_purple;
+}
+
+.report-text {
+    display: block;
+    color: $neutral_navy_200;
+    font-size: 15px;
+    padding-bottom: 2px;
+}
+
+.profile-name {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.weekly-link {
+    padding: 20px 0;
+}
+
+ul span {
+    display: block;
+}
+
+.category-title {
+    font-weight: 500;
+}

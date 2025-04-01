@@ -10,3 +10,51 @@ body {
   color: white;
   background-color: hsl(226, 43%, 10%);
 }
+
+.profile-info {
+  background-color: hsl(246, 80%, 60%);
+  padding-top: 35px;
+  padding-left: 25px;
+}
+
+.profile-info img {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 35px;
+}
+
+nav {
+  background-color: hsl(235, 46%, 20%);
+  padding: 25px 0 35px 25px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: hsl(235, 45%, 61%);
+}
+
+.report-text {
+  display: block;
+  color: hsl(236, 100%, 87%);
+  font-size: 15px;
+  padding-bottom: 2px;
+}
+
+.profile-name {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.weekly-link {
+  padding: 20px 0;
+}
+
+ul span {
+  display: block;
+}
+
+.category-title {
+  font-weight: 500;
+}

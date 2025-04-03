@@ -2,7 +2,7 @@
 
 main {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 254px 160px;
 }
 
@@ -34,6 +34,10 @@ nav a {
     color: $neutral_purple;
 }
 
+nav a:hover {
+    color: white;
+}
+
 .report-text {
     display: block;
     color: $neutral_navy_200;
@@ -55,7 +59,8 @@ ul {
     list-style: none;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 255px);
+    gap: 30px;
 }
 
 ul span {
@@ -63,11 +68,22 @@ ul span {
 }
 
 li {
-    padding-left: 20px;
+    border-radius: 16px;
+    padding-top: 45px;
 }
 
 .timeframe-container{
     background-color: $neutral_navy_900;
+    border-radius: 16px;
+    padding: 28px 25px 32px;
+
+    &:hover {
+        background-color: $neutral_purple;
+    }
+
+    &.ellipsis-hovered {
+        background-color: $neutral_navy_900;
+    }
 }
 
 .category-title {
@@ -78,7 +94,7 @@ li {
     font-size: 55px;
     font-weight: 300;
     padding-top: 25px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
 }
 
 .category-previous-value {
@@ -88,4 +104,50 @@ li {
 
 .selected-timeframe {
     color: white;
+}
+
+.work-container {
+    background-color: $primary_orange;
+
+    @include addBgImg("../images/icon-work.svg");
+}
+
+.play-container {
+    background-color: $primary_blue;
+
+    @include addBgImg("../images/icon-play.svg", -6px);
+}
+
+.study-container {
+    background-color: $primary_pink;
+
+    @include addBgImg("../images/icon-study.svg");
+}
+
+.exercise-container {
+    background-color: $primary_green;
+
+    @include addBgImg("../images/icon-exercise.svg", -2px);
+}
+
+.social-container {
+    background-color: $primary_purple_700;
+
+    @include addBgImg("../images/icon-social.svg", -15px);
+}
+
+.self-care-container {
+    background-color: $primary_yellow;
+
+    @include addBgImg("../images/icon-self-care.svg");
+}
+
+.ellipsis-img {
+    position: relative;
+    top: 10px;
+    float: right;
+
+    &:hover {
+        filter: brightness(0) invert(1);
+    }
 }

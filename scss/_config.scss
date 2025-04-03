@@ -23,3 +23,9 @@ body {
     color: white;
     background-color: $neutral_navy_950;
 }
+
+@mixin addBgImg( $path, $yPos: -10px ){
+    background-image: url( $path );
+    background-repeat: no-repeat;
+    background-position: 90% $yPos;
+}

@@ -2,8 +2,9 @@
 
 main {
     display: flex;
+    justify-content: center;
     gap: 30px;
-    margin: 254px 160px;
+    margin: 254px 0;
 }
 
 .profile-nav-container {

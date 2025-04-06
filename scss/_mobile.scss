@@ -1,0 +1,81 @@
+@media screen and (max-width: 1127px){
+    main {
+        flex-direction: column;
+        gap: 25px;
+        margin: 75px 20px;
+    }
+
+    .profile-info {
+        display: flex;
+        gap: 20px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+    .profile-info img {
+        margin-bottom: 0;
+        width: 70px;
+    }
+
+    .profile-info p {
+        display: grid;
+        grid-template-rows: 30%;
+        grid-template-columns: 50%;
+        align-content: center;
+        column-gap: 4px;
+    }
+
+    .report-text {
+        grid-column: 1 / 2;
+    }
+
+    .profile-first-name, .profile-last-name {
+        font-size: 25px;
+        grid-row: 2;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 25px 25px 35px;
+    }
+
+    .weekly-link {
+        padding: 0;
+    }
+
+    ul {
+        grid-template-columns: 100%;
+        gap: 25px;
+    }
+
+    li {
+        padding-top: 40px;
+    }
+
+    .category-title {
+        margin-bottom: 5px;
+    }
+
+    .category-current-value {
+        display: inline;
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .category-previous-value {
+        position: relative;
+        float: right;
+        top: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .profile-info{
+        flex-wrap: wrap;
+    }
+
+    .category-previous-value {
+        float: none;
+    }
+}
